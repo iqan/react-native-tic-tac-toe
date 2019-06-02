@@ -1,22 +1,12 @@
-import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { createStackNavigator, createAppContainer } from "react-navigation";
+
 import Home from "./components/Home";
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Home />
-      </View>
-    );
-  }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#F5FCFF"
-  }
+const MainNavigator = createStackNavigator({
+  Home: { screen: Home },
+  About: { screen: About }
 });
+
+const App = createAppContainer(MainNavigator);
+
+export default App;

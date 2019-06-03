@@ -9,7 +9,7 @@ const MainNavigator = createStackNavigator(
     Game: { screen: Screens.Game }
   },
   {
-    initialRouteName: "Game",
+    initialRouteName: "Home",
     defaultNavigationOptions: {}
   }
 );

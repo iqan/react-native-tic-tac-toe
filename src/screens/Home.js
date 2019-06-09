@@ -21,6 +21,12 @@ class Home extends React.Component {
             onPress={() => navigate("About")}
             color="green"
           />
+          <View style={{ height: 20 }} />
+          <Button
+            title="Login"
+            onPress={() => navigate("Login")}
+            color="orange"
+          />
         </View>
       </View>
     );

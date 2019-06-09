@@ -198,9 +198,6 @@ const styles = StyleSheet.create({
     fontSize: 42
   },
   result: {
-    // position: "absolute",
-    // alignSelf: "center",
-    // marginTop: 200,
     margin: 20
   },
   resultText: {
